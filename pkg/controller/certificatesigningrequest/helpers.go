@@ -4,11 +4,12 @@ import (
 	"crypto/x509"
 	"encoding/pem"
 	"errors"
-	"k8s.io/klog"
 	"reflect"
 	"strings"
 
-	capi "k8s.io/api/certificates/v1beta1"
+	"k8s.io/klog"
+
+	capi "k8s.io/api/certificates/v1"
 )
 
 func getCertApprovalCondition(status *capi.CertificateSigningRequestStatus) (approved bool, denied bool) {

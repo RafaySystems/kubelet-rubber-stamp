@@ -2,6 +2,7 @@ pipeline {
   environment {
     registry = "registry.dev.rafay-edge.net:5000/rafay/kubelet-rubber-stamp"
     registryCredential = 'rcloud_user_registry.stage.rafay.cloud'
+    registryUrl = 'https://registry.dev.rafay-edge.net'
     dockerImage = ''
   }
   agent any
